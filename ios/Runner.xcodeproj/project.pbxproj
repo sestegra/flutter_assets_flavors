@@ -54,15 +54,15 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC16FA8069064D2D87FB4978 /* Release-x.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release-x.xcconfig; path = Flutter/Release-x.xcconfig; sourceTree = "<group>"; };
-		B81CBD9A75F4414CB644EE06 /* Debug-x.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug-x.xcconfig; path = Flutter/Debug-x.xcconfig; sourceTree = "<group>"; };
-		E2F643F730EA4961B2DF3734 /* x.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = x.xcconfig; path = Flutter/x.xcconfig; sourceTree = "<group>"; };
-		D5CC57F4D8B64B90BE5753E0 /* Release-y.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release-y.xcconfig; path = Flutter/Release-y.xcconfig; sourceTree = "<group>"; };
-		FF69F0538D75485A91CBF11C /* Debug-y.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug-y.xcconfig; path = Flutter/Debug-y.xcconfig; sourceTree = "<group>"; };
-		7F19AC3458A44A66AE758B24 /* y.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = y.xcconfig; path = Flutter/y.xcconfig; sourceTree = "<group>"; };
-		C1E654028E74486D94B640DF /* Release-z.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release-z.xcconfig; path = Flutter/Release-z.xcconfig; sourceTree = "<group>"; };
-		7E4407C961BA49849ACCA4AF /* Debug-z.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug-z.xcconfig; path = Flutter/Debug-z.xcconfig; sourceTree = "<group>"; };
-		67CEACA835664F84B87AEF15 /* z.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = z.xcconfig; path = Flutter/z.xcconfig; sourceTree = "<group>"; };
+		AC0201634CF74EDA98908BD6 /* Release-x.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release-x.xcconfig; path = Flutter/Release-x.xcconfig; sourceTree = "<group>"; };
+		1FBEEA513BB34F7594EB196F /* Debug-x.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug-x.xcconfig; path = Flutter/Debug-x.xcconfig; sourceTree = "<group>"; };
+		9CACAB8263D7431D83F37FA0 /* x.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = x.xcconfig; path = Flutter/x.xcconfig; sourceTree = "<group>"; };
+		2E80A87C895847A79EE319C0 /* Release-y.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release-y.xcconfig; path = Flutter/Release-y.xcconfig; sourceTree = "<group>"; };
+		F7CD42291B514EA7BE7C30D5 /* Debug-y.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug-y.xcconfig; path = Flutter/Debug-y.xcconfig; sourceTree = "<group>"; };
+		2981AADA34C34F6299AC1F9F /* y.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = y.xcconfig; path = Flutter/y.xcconfig; sourceTree = "<group>"; };
+		A116CEE3D9F54136A218A357 /* Release-z.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release-z.xcconfig; path = Flutter/Release-z.xcconfig; sourceTree = "<group>"; };
+		E2B64418D6AE475CB64398C7 /* Debug-z.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug-z.xcconfig; path = Flutter/Debug-z.xcconfig; sourceTree = "<group>"; };
+		F9A020B5206F444EAA91E37A /* z.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = z.xcconfig; path = Flutter/z.xcconfig; sourceTree = "<group>"; };
 		/* <flavor-files> */
 /* End PBXFileReference section */
 
@@ -89,15 +89,15 @@
 				9740EEB21CF90195004384FC /* Debug.xcconfig */,
 				7AFA3C8E1D35360C0083082E /* Release.xcconfig */,
 				9740EEB31CF90195004384FC /* Generated.xcconfig */,
-				FC16FA8069064D2D87FB4978 /* Release-x.xcconfig */,
-				B81CBD9A75F4414CB644EE06 /* Debug-x.xcconfig */,
-				E2F643F730EA4961B2DF3734 /* x.xcconfig */,
-				D5CC57F4D8B64B90BE5753E0 /* Release-y.xcconfig */,
-				FF69F0538D75485A91CBF11C /* Debug-y.xcconfig */,
-				7F19AC3458A44A66AE758B24 /* y.xcconfig */,
-				C1E654028E74486D94B640DF /* Release-z.xcconfig */,
-				7E4407C961BA49849ACCA4AF /* Debug-z.xcconfig */,
-				67CEACA835664F84B87AEF15 /* z.xcconfig */,
+				AC0201634CF74EDA98908BD6 /* Release-x.xcconfig */,
+				1FBEEA513BB34F7594EB196F /* Debug-x.xcconfig */,
+				9CACAB8263D7431D83F37FA0 /* x.xcconfig */,
+				2E80A87C895847A79EE319C0 /* Release-y.xcconfig */,
+				F7CD42291B514EA7BE7C30D5 /* Debug-y.xcconfig */,
+				2981AADA34C34F6299AC1F9F /* y.xcconfig */,
+				A116CEE3D9F54136A218A357 /* Release-z.xcconfig */,
+				E2B64418D6AE475CB64398C7 /* Debug-z.xcconfig */,
+				F9A020B5206F444EAA91E37A /* z.xcconfig */,
 				/* <flavor-groups> */
 			);
 			name = Flutter;
@@ -501,9 +501,9 @@
 			name = Release;
 		};
 		/* <flavor x> */
-		56DB0F6B2D664491806F609E /* Release-x */ = {
+		2972E45ED4EA4B08943DAC4D /* Release-x */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC16FA8069064D2D87FB4978 /* Release-x.xcconfig */;
+			baseConfigurationReference = AC0201634CF74EDA98908BD6 /* Release-x.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -549,9 +549,9 @@
 			};
 			name = Release-x;
 		};
-   	    811AA68E270D419284BC0B88 /* Release-x */ = {
+   	    743AD26A8A4741179865962D /* Release-x */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC16FA8069064D2D87FB4978 /* Release-x.xcconfig */;
+			baseConfigurationReference = AC0201634CF74EDA98908BD6 /* Release-x.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-x;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -566,16 +566,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterAssetsFlavors;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterAssetsFlavors.x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release-x;
 		};
 
-		904ECD8D427E4722A7BB3D28 /* Debug-x */ = {
+		3850719CE88641908E2F4979 /* Debug-x */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B81CBD9A75F4414CB644EE06 /* Debug-x.xcconfig */;
+			baseConfigurationReference = 1FBEEA513BB34F7594EB196F /* Debug-x.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -627,9 +627,9 @@
 			};
 			name = Debug-x;
 		};
-		1437C5039F28492CAF335DAA /* Debug-x */ = {
+		62B21D4F921F410D8BA759A5 /* Debug-x */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B81CBD9A75F4414CB644EE06 /* Debug-x.xcconfig */;
+			baseConfigurationReference = 1FBEEA513BB34F7594EB196F /* Debug-x.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-x;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -644,7 +644,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterAssetsFlavors;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterAssetsFlavors.x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -652,9 +652,9 @@
 		};
 		/* </flavor x> */
 		/* <flavor y> */
-		0D0B3C71681A4A23ADF429CF /* Release-y */ = {
+		68118E0206FE4D37A096FBB6 /* Release-y */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5CC57F4D8B64B90BE5753E0 /* Release-y.xcconfig */;
+			baseConfigurationReference = 2E80A87C895847A79EE319C0 /* Release-y.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -700,9 +700,9 @@
 			};
 			name = Release-y;
 		};
-   	    87E22AFE80CA43B4AB8E24F6 /* Release-y */ = {
+   	    C2066E5FD78345D690B35914 /* Release-y */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5CC57F4D8B64B90BE5753E0 /* Release-y.xcconfig */;
+			baseConfigurationReference = 2E80A87C895847A79EE319C0 /* Release-y.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-y;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -717,16 +717,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterAssetsFlavors;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterAssetsFlavors.y;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release-y;
 		};
 
-		6E2AC87DA48B4569B48E17AB /* Debug-y */ = {
+		944106DC69FF4CD5976259B3 /* Debug-y */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF69F0538D75485A91CBF11C /* Debug-y.xcconfig */;
+			baseConfigurationReference = F7CD42291B514EA7BE7C30D5 /* Debug-y.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -778,9 +778,9 @@
 			};
 			name = Debug-y;
 		};
-		2CAFCD5B36BD442A9D20DD20 /* Debug-y */ = {
+		75DBC02A141344D0906EFB89 /* Debug-y */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF69F0538D75485A91CBF11C /* Debug-y.xcconfig */;
+			baseConfigurationReference = F7CD42291B514EA7BE7C30D5 /* Debug-y.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-y;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -795,7 +795,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterAssetsFlavors;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterAssetsFlavors.y;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -803,9 +803,9 @@
 		};
 		/* </flavor y> */
 		/* <flavor z> */
-		67EDE8C9216449D6B44BDECB /* Release-z */ = {
+		EB7347F8B33847B7BB9E4482 /* Release-z */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1E654028E74486D94B640DF /* Release-z.xcconfig */;
+			baseConfigurationReference = A116CEE3D9F54136A218A357 /* Release-z.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -851,9 +851,9 @@
 			};
 			name = Release-z;
 		};
-   	    E3173419C21D445A89B088E4 /* Release-z */ = {
+   	    05FBFDF3BCDE4F22BF9F36A2 /* Release-z */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1E654028E74486D94B640DF /* Release-z.xcconfig */;
+			baseConfigurationReference = A116CEE3D9F54136A218A357 /* Release-z.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-z;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -868,16 +868,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterAssetsFlavors;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterAssetsFlavors.z;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release-z;
 		};
 
-		013365EC3E114C19BCAA8B0A /* Debug-z */ = {
+		A807D0F593064215813C882A /* Debug-z */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E4407C961BA49849ACCA4AF /* Debug-z.xcconfig */;
+			baseConfigurationReference = E2B64418D6AE475CB64398C7 /* Debug-z.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -929,9 +929,9 @@
 			};
 			name = Debug-z;
 		};
-		D3A523A0B2BC4CD59964A2CD /* Debug-z */ = {
+		55D6815843914AE5B9A8FDA2 /* Debug-z */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E4407C961BA49849ACCA4AF /* Debug-z.xcconfig */;
+			baseConfigurationReference = E2B64418D6AE475CB64398C7 /* Debug-z.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-z;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -946,7 +946,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterAssetsFlavors;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterAssetsFlavors.z;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -963,12 +963,12 @@
 				97C147031CF9000F007C117D /* Debug */,
 				97C147041CF9000F007C117D /* Release */,
 				249021D3217E4FDB00AE95B9 /* Profile */,
-				56DB0F6B2D664491806F609E /* Release-x */,
-				904ECD8D427E4722A7BB3D28 /* Debug-x */,
-				0D0B3C71681A4A23ADF429CF /* Release-y */,
-				6E2AC87DA48B4569B48E17AB /* Debug-y */,
-				67EDE8C9216449D6B44BDECB /* Release-z */,
-				013365EC3E114C19BCAA8B0A /* Debug-z */,
+				2972E45ED4EA4B08943DAC4D /* Release-x */,
+				3850719CE88641908E2F4979 /* Debug-x */,
+				68118E0206FE4D37A096FBB6 /* Release-y */,
+				944106DC69FF4CD5976259B3 /* Debug-y */,
+				EB7347F8B33847B7BB9E4482 /* Release-z */,
+				A807D0F593064215813C882A /* Debug-z */,
 				/* <flavor-project-configs> */
 			);
 			defaultConfigurationIsVisible = 0;
@@ -980,12 +980,12 @@
 				97C147061CF9000F007C117D /* Debug */,
 				97C147071CF9000F007C117D /* Release */,
 				249021D4217E4FDB00AE95B9 /* Profile */,
-				811AA68E270D419284BC0B88 /* Release-x */,
-				1437C5039F28492CAF335DAA /* Debug-x */,
-				87E22AFE80CA43B4AB8E24F6 /* Release-y */,
-				2CAFCD5B36BD442A9D20DD20 /* Debug-y */,
-				E3173419C21D445A89B088E4 /* Release-z */,
-				D3A523A0B2BC4CD59964A2CD /* Debug-z */,
+				743AD26A8A4741179865962D /* Release-x */,
+				62B21D4F921F410D8BA759A5 /* Debug-x */,
+				C2066E5FD78345D690B35914 /* Release-y */,
+				75DBC02A141344D0906EFB89 /* Debug-y */,
+				05FBFDF3BCDE4F22BF9F36A2 /* Release-z */,
+				55D6815843914AE5B9A8FDA2 /* Debug-z */,
 				/* <flavor-target-configs> */
 			);
 			defaultConfigurationIsVisible = 0;
@@ -995,4 +995,4 @@
 	};
 	rootObject = 97C146E61CF9000F007C117D /* Project object */;
 }
-}
+/* <flutter-flavor> */

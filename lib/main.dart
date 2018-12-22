@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+import 'package:flutter_assets_flavors/app_config.dart';
+// void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    var config = AppConfig.of(context);
+    
+    return new MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -19,8 +21,9 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
+        fontFamily: 'Regular',
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: config.getTitle()),
     );
   }
 }
@@ -59,6 +62,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var config = AppConfig.of(context);
+
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
@@ -91,8 +96,27 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            FutureBuilder<String>(
+              future: config.getPackageInfo(),
+              initialData: "",
+              builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+                if (snapshot.hasData) {
+                  return Text(snapshot.data);
+                } else {
+                  return new CircularProgressIndicator();
+                }
+              }
+            ),
+            FutureBuilder<String>(
+              future: config.loadStringAsset("messages.txt"),
+              initialData: "",
+              builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+                if (snapshot.hasData) {
+                  return Text(snapshot.data);
+                } else {
+                  return new CircularProgressIndicator();
+                }
+              }
             ),
             Text(
               '$_counter',
