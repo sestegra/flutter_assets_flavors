@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+
+set -e
+
+INSTALL_PATH=${1}
+VERSION=${2}
+PATCH_NUMBER=25487
+
+if [ -d ${INSTALL_PATH}/flutter ]; then
+    echo "'flutter' directory already exists in ${INSTALL_PATH}"
+    exit -1
+fi
+
+PATCH_URL=https://patch-diff.githubusercontent.com/raw/flutter/flutter/pull/${PATCH_NUMBER}.patch
+FLUTTER_URL=
+case $OSTYPE in
+    linux*)
+        FLUTTER_URL=https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v${VERSION}-stable.tar.xz
+        ;;
+    darwin*)
+        FLUTTER_URL=https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_v${VERSION}-stable.zip
+        ;;
+esac
+
+if [ -z FLUTTER_URL ]; then
+    echo "Not supported"
+    exit -1
+fi
+
+FLUTTER_ARCHIVE=${INSTALL_PATH}/$(basename ${FLUTTER_URL})
+if [ ! -f ${FLUTTER_ARCHIVE} ]; then
+    echo "Download Flutter archive"
+    wget -q ${FLUTTER_URL} -O ${FLUTTER_ARCHIVE}
+fi
+
+PATCH=${INSTALL_PATH}/$(basename ${PATCH_URL})
+rm -f $PATCH
+echo "Download patch"
+wget -q ${PATCH_URL} -O ${PATCH}
+
+VERSION_PATCH=${VERSION}-${PATCH_NUMBER}
+echo "Extract Flutter archive"
+case $OSTYPE in
+    linux*)
+        tar xf ${FLUTTER_ARCHIVE} -C ${INSTALL_PATH}
+        ;;
+    darwin*)
+        unzip -q ${FLUTTER_ARCHIVE} -d ${INSTALL_PATH}
+        ;;
+esac
+mv ${INSTALL_PATH}/flutter ${INSTALL_PATH}/${VERSION_PATCH}
+
+echo "Patch Flutter"
+cd ${INSTALL_PATH}/${VERSION_PATCH}
+patch -p1 < ${PATCH}
+rm -f ${INSTALL_PATH}/${VERSION_PATCH}/bin/cache/flutter_tools.*
+
+${INSTALL_PATH}/${VERSION_PATCH}/bin/flutter doctor
+
+echo Update your profile with PATH="\$PATH:${INSTALL_PATH}/${VERSION_PATCH}/bin"
