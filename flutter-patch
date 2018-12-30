@@ -4,14 +4,23 @@ set -e
 
 INSTALL_PATH=${1}
 VERSION=${2}
-PATCH_NUMBER=25487
 
 if [ -d ${INSTALL_PATH}/flutter ]; then
     echo "'flutter' directory already exists in ${INSTALL_PATH}"
     exit -1
 fi
 
-PATCH_URL=https://patch-diff.githubusercontent.com/raw/flutter/flutter/pull/${PATCH_NUMBER}.patch
+PATCH_URL=
+case $VERSION in
+    1.0.0)
+        PATCH_URL=https://patch-diff.githubusercontent.com/raw/sestegra/flutter/pull/1.patch
+        ;;
+    *)
+        echo "$VERSION not supported"
+        exit -1
+        ;;
+esac
+
 FLUTTER_URL=
 case $OSTYPE in
     linux*)
@@ -38,7 +47,7 @@ rm -f $PATCH
 echo "Download patch"
 wget -q ${PATCH_URL} -O ${PATCH}
 
-VERSION_PATCH=${VERSION}-${PATCH_NUMBER}
+VERSION_PATCH=${VERSION}-patch
 echo "Extract Flutter archive"
 case $OSTYPE in
     linux*)
