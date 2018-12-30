@@ -5,7 +5,7 @@ This application supports different set of assets and launcher icons depending o
 | | X | Y | Z |
 | :--- | --- | --- | --- |
 | Android ![Android](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/android.jpg) | ![Android X](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/android-x.jpg) | ![Android Y](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/android-y.jpg) | ![Android Z](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/android-z.jpg) |
-| iOS ![iOS](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/ios.jpg) | ![iOS X](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/ios-x.jpg) | ![iOS Y](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/ios-y.jpg) | ![iOS Z](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/ios-z.jpg) |
+| iOS ![iOS](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/ios.jpg) | ![iOS X](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/ios-x.jpg) | ![iOS Y](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/ios-y.jpg) | ![iOS Z](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/ios-z.jpg) |
 
 ## Assets manifest files
 Manifest files are loaded in following order
