@@ -1,6 +1,11 @@
 # flutter_assets_flavors
 
-Support different set of assets depending on platform and flavor parameters.
+This application supports different set of assets and launcher icons depending on platform and flavor parameters.
+
+| | X | Y | Z |
+| :--- | --- | --- | --- |
+| Android ![Android](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/android.jpg) | ![Android X](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/android-x.jpg) | ![Android Y](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/android-y.jpg) | ![Android Z](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/android-z.jpg) |
+| iOS ![iOS](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/ios.jpg) | ![iOS X](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/ios-x.jpg) | ![iOS Y](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/ios-y.jpg) | ![iOS Z](https://raw.github.com/sestegra/flutter_assets_flavors/master/screenshots/ios-z.jpg) |
 
 ## Assets manifest files
 Manifest files are loaded in following order
@@ -16,6 +21,16 @@ Manifest files are loaded in following order
 When an assets file is not present, the next one is loaded without overriding parameters from previous steps.
 
 Assets file format is the same as pubspec.yaml.
+
+## Launcher icons manifest files
+
+Manifest files are `flutter_launcher-<flavor>.yaml` (see [Flutter Launcher Icons](https://github.com/fluttercommunity/flutter_launcher_icons))
+
+Launch following command to prepare flavored launched icons.
+```
+$ flutter packages pub run flutter_launcher_icons:main
+```
+
 
 ## Getting Started
 
@@ -33,4 +48,4 @@ Optionaly, you could use `flutter-flavor` tool to manage flavors in your Flutter
 - `flutter build apk --flavor <flavor> --target lib/main_<flavor>.dart`
 - `flutter build ios --flavor <flavor> --target lib/main_<flavor>.dart`
 
-This project contains a `Makefile` that builds all flavors.
+This project contains a `Makefile` that builds flavored launcher icons and all flavored applications.
