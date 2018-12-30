@@ -24,13 +24,14 @@ Assets file format is the same as pubspec.yaml.
 
 ## Launcher icons manifest files
 
+Note that following pull request is required [Read flavor icons files](https://github.com/fluttercommunity/flutter_launcher_icons/pull/69).
+
 Manifest files are `flutter_launcher-<flavor>.yaml` (see [Flutter Launcher Icons](https://github.com/fluttercommunity/flutter_launcher_icons))
 
-Launch following command to prepare flavored launched icons.
+Launch following command to prepare flavored launcher icons.
 ```
 $ flutter packages pub run flutter_launcher_icons:main
 ```
-
 
 ## Getting Started
 
@@ -42,7 +43,7 @@ Launch following command (only support Flutter 1.0.0 for now).
 $ flutter-patch $(pwd) 1.0.0
 ```
 
-Optionaly, you could use `flutter-flavor` tool to manage flavors in your Flutter app. See https://github.com/sestegra/flutter-flavor.
+Optionaly, you could use `flutter-flavor` tool to manage flavors in your Flutter app. See https://github.com/sestegra/flutter-flavor repository.
 
 ## Build
 - `flutter build apk --flavor <flavor> --target lib/main_<flavor>.dart`
