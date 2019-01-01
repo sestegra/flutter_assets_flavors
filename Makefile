@@ -18,6 +18,17 @@ build-icons:
 build-launcher-icons:
 	flutter packages pub run flutter_launcher_icons:main
 
+.PHONY: run-x run-y run-z
+
+run-x: patch-x
+	flutter run --flavor x --target lib/main_x.dart
+
+run-y: patch-y
+	flutter run --flavor y --target lib/main_y.dart
+
+run-z: patch-z
+	flutter run --flavor z --target lib/main_z.dart
+
 .PHONY: android-release android-release-x android-release-y android-release-z
 android-release: android-release-x android-release-y android-release-z
 
@@ -36,15 +47,15 @@ android-release-z:
 .PHONY: ios-release ios-release-x ios-release-y ios-release-z
 ios-release: ios-release-x ios-release-y ios-release-z
 
-ios-release-x:
+ios-release-x: patch-x
 	flutter build ios --flavor x --target lib/main_x.dart
 	flutter install
 
-ios-release-y:
+ios-release-y: patch-y
 	flutter build ios --flavor y --target lib/main_y.dart
 	flutter install
 
-ios-release-z:
+ios-release-z: patch-z
 	flutter build ios --flavor z --target lib/main_z.dart
 	flutter install
 
@@ -66,14 +77,28 @@ android-debug-z:
 .PHONY: ios-debug ios-debug-x ios-debug-y ios-debug-z
 ios-debug: ios-debug-x ios-debug-y ios-debug-z
 
-ios-debug-x:
+ios-debug-x: patch-x
 	flutter build ios --flavor x --target lib/main_x.dart --debug
 	flutter install
 
-ios-debug-y:
+ios-debug-y: patch-y
 	flutter build ios --flavor y --target lib/main_y.dart --debug
 	flutter install
 
-ios-debug-z:
+ios-debug-z: patch-z
 	flutter build ios --flavor z --target lib/main_z.dart --debug
 	flutter install
+
+.PHONY: patch-x path-y patch-z unpatch
+
+patch-x:
+	plutil -replace CFBundleIdentifier -string com.example.flutterAssetsFlavors.x ios/Runner/Info.plist
+
+patch-y:
+	plutil -replace CFBundleIdentifier -string com.example.flutterAssetsFlavors.y ios/Runner/Info.plist
+
+patch-z:
+	plutil -replace CFBundleIdentifier -string com.example.flutterAssetsFlavors.z ios/Runner/Info.plist
+
+unpatch:
+	plutil -replace CFBundleIdentifier -string '$$(PRODUCT_BUNDLE_IDENTIFIER)' ios/Runner/Info.plist
